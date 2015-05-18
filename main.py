@@ -8,11 +8,11 @@ GPIO.setup(18, GPIO.OUT)
 
 @app.route("/open/")
 def openDoor():
-        GPIO.output(18, 1)
-	time.sleep(1)
-	GPIO.output(18, 0)
-    	status = "Main Door is opened"
-    	return status
+  GPIO.output(18, 1)
+  time.sleep(1)
+  GPIO.output(18, 0)
+  status = "Main Door is opened"
+  return status
 
 
 
