@@ -21,7 +21,7 @@ def get_url():
 
 
 def retry():
-  print "ngrok unavailable retrying in " + str(t) + " seconds"
+  print "ngrok unavailable retrying in 5 seconds"
   time.sleep(5)
   get_url()
 
