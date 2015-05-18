@@ -23,7 +23,6 @@ def get_url():
 
 def retry():
   global t
-  t = t + 5
   print "ngrok unavailable retrying in " + str(t) + " seconds"
   time.sleep(t)
   get_url()
