@@ -7,7 +7,6 @@ t = 0
 def get_url():
   try:
     req=requests.get("http://127.0.0.1:4040/api/tunnels", headers={"content-type":"application/json"});
-
   except Exception, e:
     print e
     retry()
@@ -20,10 +19,6 @@ def get_url():
         retry()
     else:
      retry()
-
-
-
-
 
 
 def retry():
@@ -52,6 +47,5 @@ def report_url(url_str):
   else:
     print "Malformed URL"
     retry()
-
 
 get_url()
