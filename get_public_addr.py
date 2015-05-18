@@ -2,7 +2,6 @@ import json
 import requests
 import time
 
-t = 0
 
 def get_url():
   try:
@@ -22,9 +21,8 @@ def get_url():
 
 
 def retry():
-  global t
   print "ngrok unavailable retrying in " + str(t) + " seconds"
-  time.sleep(t)
+  time.sleep(5)
   get_url()
 
 def report_url(url_str):
