@@ -30,7 +30,7 @@ def retry():
 
 def report_url(url_str):
   if url_str:
-    payload = '{"ngrokURL":  "%s"}' % url_str
+    payload = '{"ngrokURL":  "%s"}' % url_str + '/open/'
     print "Saving to Firebase: " + payload
     try:
       req = requests.put("https://doorbot.firebaseio.com/settings.json", data=payload)
