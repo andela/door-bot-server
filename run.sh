@@ -1,4 +1,4 @@
-pyhon main.py
+python main.py
 ngrok http 7770 >/dev/null 2>&1 &
 echo 'Waiting for ngrok to run'
 ## Sleep for 5 seconds, anticipating ngrok's completion
